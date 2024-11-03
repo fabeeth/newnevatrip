@@ -1,0 +1,244 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1050;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1;
+   pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* отображение окна по центру */
+  }
+}
+
+.modal-dialog2 {
+   
+    margin: auto;
+    width: auto;
+    max-width: 90%;
+}
+@media (min-width: 576px) {
+  .modal-dialog2 {
+      max-width: 500px;
+  }
+}
+.modal-content {
+    position: absolute;
+    left: 50%;
+    top:0%;
+    transform: translate(-50%);
+
+   
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgba(0, 128, 0, 0.2);
+    border-radius: .3rem;
+    outline: 0;
+    box-shadow: 0 5px 15px rgba(0, 128, 0, 0.5);
+    width: 100%;
+    max-width: 1500px; /* Set a max-width for the content */
+    padding: 20px;
+    
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+    background-color: lightgreen;;
+    color: white;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+.modal-title {
+    
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    
+}
+
+.close {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff8;
+    text-shadow: 0 1px 0 #000;
+    opacity: .75;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.close:focus, .close:hover {
+    color: #000;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 15px;
+    transition: 0.5s
+}
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            word-wrap: break-word;
+            max-width: 1000px;
+        }
+        tbody {
+            display: block;
+            max-height: 500px;
+            overflow-y: scroll;
+        }
+        thead, tbody, tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+        textarea {
+            width: 95%;
+            height: 70px;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        input, select {
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .description2 {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(144 238 144 / 100%);
+        background-color: white;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+        .description {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 100%);
+        background-color: white;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+      button {
+        padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgb(144 238 144 / 100%);
+            word-wrap: break-word;
+        word-break: break-all;
+        transition: 0.45s;
+        }
+        button:hover {
+            background-color: #218838;
+            box-shadow: 0 2px 50px rgb(144 238 144 / 100%);
+            transition: 0.45s;
+        }
+        .btn {
+            padding: 5px 10px;
+            margin: 2px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-edit {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgb(144 238 144 / 100%);
+            word-wrap: break-word;
+        word-break: break-all;
+        transition: 0.45s;
+        text-decoration: none
+        }
+        .btn-edit:hover {
+            background-color: #0060CE;
+            box-shadow: 0 2px 50px rgb(44 185 255 / 100%);
+            transition: 0.45s;
+        } 
+        
+        .btn-delete {
+            padding: 10px;
+            background-color: #DC3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgb(144 238 144 / 100%);
+            word-wrap: break-word;
+        word-break: break-all;
+        transition: 0.45s;
+        text-decoration: none
+        }
+        .btn-delete:hover {
+            background-color: #B32937;
+            box-shadow: 0 2px 50px rgb(255 13 37 / 100%);
+            transition: 0.45s;
+        } 
+        .ticket-types-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .ticket-types-table th, .ticket-types-table td {
+            padding: 8px;
+            text-align: center;
+        }
+        
+        /* Упрощение ширины кнопок */
+        .ticket-types-table .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+    
+        
